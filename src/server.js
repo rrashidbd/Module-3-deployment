@@ -29,6 +29,10 @@ let server;
 //   });
 // }
 
+app.listen(3000, '0.0.0.0', () => {
+  console.log('Server is running on port 3000');
+});
+
 if (require.main === module) {
   // If the file is run directly, start the server
   const PORT = process.env.PORT || 5000;
